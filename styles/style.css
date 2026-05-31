@@ -1,0 +1,172 @@
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background-color: #07142b;
+  color: white;
+}
+
+.navbar {
+  background-color: #1a2238;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 50px;
+}
+
+.logo {
+  color: #5da2ff;
+  font-size: 36px;
+  font-weight: bold;
+}
+
+.nav-links {
+  display: flex;
+  gap: 25px;
+}
+
+.nav-links a {
+  color: white;
+  text-decoration: none;
+  font-size: 18px;
+  transition: 0.3s;
+}
+
+.nav-links a:hover {
+  color: #5da2ff;
+}
+.page {
+  padding: 40px;
+  min-height: 80vh;
+}
+
+.page h1 {
+  font-size: 45px;
+  margin-bottom: 20px;
+}
+.hero {
+  text-align: center;
+  padding: 100px 20px;
+}
+
+.hero h1 {
+  font-size: 60px;
+  margin-bottom: 20px;
+}
+
+.hero p {
+  font-size: 20px;
+  margin-bottom: 30px;
+}
+
+button {
+  background-color: #5da2ff;
+  color: white;
+  border: none;
+  padding: 12px 25px;
+  font-size: 18px;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+button:hover {
+  background-color: #3d89e8;
+  transform: scale(1.05);
+}
+.cards {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 25px;
+}
+.card {
+  background-color: #1a2238;
+  width: 280px;
+  padding: 25px;
+  border-radius: 12px;
+  text-align: center;
+  transition: 0.3s;
+}
+.card:hover {
+  transform: translateY(-10px);
+}
+.card h2 {
+  color: #5da2ff;
+}
+.card p {
+  color: #ddd;
+}
+.video-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 25px;
+}
+
+.video-card {
+  width: 430px;
+  background-color: #1a2238;
+  padding: 15px;
+  border-radius: 12px;
+  text-align: center;
+  transition: 0.3s;
+}
+
+.video-card:hover {
+  transform: translateY(-8px);
+}
+
+.video-card h2 {
+  color: #5da2ff;
+  margin-bottom: 15px;
+}
+
+.video-card video {
+  width: 100%;
+  border-radius: 10px;
+}
+
+ 
+
+form {
+  max-width: 500px;
+  margin: auto;
+}
+
+input,
+textarea {
+  width: 100%;
+  padding: 12px;
+  margin-bottom: 15px;
+  border: none;
+  border-radius: 8px;
+}
+
+textarea {
+  height: 120px;
+}
+.footer {
+  background-color: #1a2238;
+  text-align: center;
+  padding: 20px;
+}
+@media (max-width: 768px) {
+  .navbar {
+    flex-direction: column;
+    gap: 15px;
+  }
+
+  .nav-links {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .hero h1 {
+    font-size: 40px;
+  }
+
+  .card,
+  .video-card {
+    width: 100%;
+  }
+}
